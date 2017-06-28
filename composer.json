@@ -1,0 +1,33 @@
+{
+  "name": "phpcommon/serializer",
+  "type": "project",
+  "description": "A very flexible serializer",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.1.0",
+    "doctrine/cache": "^1.6",
+    "jms/metadata": "^1.6",
+    "phpcommon/comparison": "^1.0@beta",
+    "marc-mabe/php-enum": "^2.3",
+    "symfony/options-resolver": "^3.3",
+    "webmozart/json": "^1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "mikey179/vfsStream": "^1.6",
+    "phpbench/phpbench": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpCommon\\Serializer\\": "src/",
+      "Croct\\Cct\\": "/Users/marcospassos/Development/cct-php/src/",
+      "PhpCommon\\ResourceResolver\\": "../resource-resolver/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PhpCommon\\Serializer\\Test\\": "test/"
+    }
+  }
+}
